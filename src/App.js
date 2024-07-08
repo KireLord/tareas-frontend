@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './index.css'; // Asegúrate de que se está importando el archivo de estilos correcto
+import TareasList from './TareasList';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Gestión de Tareas</h1>
       </header>
+      <main className="main">
+        <TareasList />
+      </main>
     </div>
   );
 }
